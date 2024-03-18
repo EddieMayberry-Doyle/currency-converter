@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currency Converter</title>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <form id=".bookmark-form" action="/action_page.php" class="floater content">
+        <div>
+        <div class="dropdown">
+            Choose your first Currency: <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a id="firstCurrency">Dropdown button</a>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" value="USD">USD</a></li>
+                <li><a class="dropdown-item" value="EUR">EUR</a></li>
+                <li><a class="dropdown-item" value="CAD">CAD</a></li>
+                <li><a class="dropdown-item" value="JPY">JPY</a></li>
+                <li><a class="dropdown-item" value="GBP">GBP</a></li>
+                <li><a class="dropdown-item" value="AUD">AUD</a></li>
+                <li><a class="dropdown-item" value="CHF">CHF</a></li>
+                <li><a class="dropdown-item" value="HKD">HKD</a></li>
+                <li><a class="dropdown-item" value="NZD">NZD</a></li>
+            </ul>
+          </div>
+          </div>
+        <br><br>
+        <div class="dropdown">
+            Convert to:  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a id="secondCurrency">Dropdown button</a>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" value="USD">USD</a></li>
+                <li><a class="dropdown-item" value="EUR">EUR</a></li>
+                <li><a class="dropdown-item" value="CAD">CAD</a></li>
+                <li><a class="dropdown-item" value="JPY">JPY</a></li>
+                <li><a class="dropdown-item" value="GBP">GBP</a></li>
+                <li><a class="dropdown-item" value="AUD">AUD</a></li>
+                <li><a class="dropdown-item" value="CHF">CHF</a></li>
+                <li><a class="dropdown-item" value="HKD">HKD</a></li>
+                <li><a class="dropdown-item" value="NZD">NZD</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <br><br>
+        <div class="floater-top">
+            <input id="amount" placeholder="amount to convert" class="form-control" required>
+        </div>
+        <br><br>
+        <div class="floater-bottom">
+            <button id="convert-button" type="submit" class="btn btn-primary btn-sm">Convert</button>
+        </div>
+      </form>
+
+    <div class="bookmarks-list" id="bookmark-list">
+        <div class="bookmark">
+            <div class="title">FIRST CURRENCY AND AMOUNT Converts to:<br>
+                SECOND CURRENCY AND AMOUNT
+            </div>
+            <div><i name="deleteBookmark" class="bi-trash delete-icon"></i></div>
+        </div>
+    </div>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/stylesStart.css"> 
+</body>
+</html>
